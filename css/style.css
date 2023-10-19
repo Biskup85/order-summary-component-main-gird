@@ -1,0 +1,157 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  font-size: 16px;
+  font-family: "Red Hat Display";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.flexWrapper {
+  height: 550px;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.fallback-info {
+  width: 330px;
+  height: 150px;
+  background-image: url("../images/illustration-hero.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.coulum-main-text {
+  padding: 15px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+ul {
+  width: 90%;
+  height: 80px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr 2fr;
+  background-color: hsl(225, 100%, 98%);
+  list-style-type: none;
+  border-radius: 15px;
+}
+
+.girdOne {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.girdTwo {
+  grid-column: 2/3;
+  grid-row: 1;
+}
+
+.girdThree {
+  grid-column: 3/4;
+  grid-row: 1;
+}
+
+.plan {
+  font-weight: 700;
+}
+
+.cta-buttonOne {
+  width: 90%;
+  height: 40px;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  box-shadow: 1px 10px 30px gray;
+  padding: 10px;
+  margin: 25px 0;
+}
+
+.cta-buttonTwo {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+footer {
+  display: inline-block;
+  position: absolute;
+  bottom: 1%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+  }
+}
+@media (min-width: 998px) {
+  body {
+    width: 998px;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    width: 1440px;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    background-position: 0 -60px;
+  }
+}/*# sourceMappingURL=style.css.map */
